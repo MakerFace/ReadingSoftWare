@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:weightSum="6"
+        android:layout_alignParentBottom="true"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:id="@+id/boy"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="40dp"
+                android:text="男生"
+                android:textSize="13dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:id="@+id/gril"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="40dp"
+                android:text="女生"
+                android:textSize="13dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/magazine"
+            android:layout_marginTop="10dp"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="40dp"
+                android:text="杂志"
+                android:textSize="13dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

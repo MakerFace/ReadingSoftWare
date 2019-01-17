@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="90dp"
+        android:id="@+id/home_item_img"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitXY"
+        android:layout_height="130dp" />
+    <TextView
+        android:layout_width="90dp"
+        android:id="@+id/good_word_item_title"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:layout_height="30dp" />
+</LinearLayout>
